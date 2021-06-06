@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Pranav Surekar Website</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<nav class="navbar background h-nav-resp">
+		<ul class="nav-list v-class-resp">
+			<div class="logo"><img src="img/logo.PNG" alt="logo"></div>
+			<li><a href="#Home" class="">Home</a></li>
+			<li><a href="#Aboutus" class="">About Us</a></li>
+			<li><a href="#Contactus" class="">Contact Us</a></li>
+			<li><a href="#Services" class="">Services</a></li>
+		</ul>
+		<div class="rightnav v-class-resp">
+			<input type="text" id="search" name="search">
+			<button id="btnSearch" class="btn btn-sm">search</button>
+		</div>
+		<div class="burger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</nav>
+	<section class="background firstSection">
+		<div class="box-main">
+			<div class="firsthalf">
+				<p class="text-big">This is my first website</p>
+				<p class="text-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+					Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+					a galley of type and scrambled it to make a type specimen book. It has survived not only five
+					centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+					popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+					more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+					Ipsum.</p>
+				<div class="buttons">
+					<button class="btn">Subscribe</button>
+					<button class="btn">Watch Videos</button>
+				</div>
+			</div>
+			<div class="secondhalf">
+				<img id="secondhalf-image" src="img/darshil.JPG" alt="First Section">
+			</div>
+		</div>
+	</section>
+	<script src="js/responsive.js"></script>
+	<script type="text/javascript">
+		burger = document.querySelector(".burger")
+		navbar = document.querySelector(".navbar")
+		rightnav = document.querySelector(".rightnav")
+		navlist = document.querySelector(".nav-list")
+
+		burger.addEventListener('Click', () => {
+			rightnav.classList.toggle('v-class-resp');
+			navlist.classList.toggle('v-class-resp');
+			navbar.classList.toggle('h-nav-resp');
+		})
+	</script>
+</body>
+
+</html>

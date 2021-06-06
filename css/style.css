@@ -1,0 +1,191 @@
+﻿/* Margin Bydefault set to 0 and padding 0 */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	width:100px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo img{
+	width:80px;
+}
+
+.navbar{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	cursor: pointer; 
+}
+
+.nav-list{
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.nav-list li{
+	list-style:none;
+	padding: 26px 30px;
+}
+
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-list li a:hover{
+	text-decoration: none;
+	color: grey;
+}
+
+.rightnav{
+	text-align: right;
+    width: 50%;
+    padding: 10px;
+}
+
+.background{
+	background:rgba(0, 0,0,0.7) url(../img/background.jpg);
+	background-size:  cover;
+	background-blend-mode: darken;
+}
+
+#search{
+    border: 5px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 9px;
+    margin: 5px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+/* Section CSS Started */
+
+.firstSection{
+	height: 100vh;
+}
+.box-main{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+}
+
+.firsthalf{
+	display: flex;
+    flex-direction: column;
+
+}
+.secondhalf{
+	width:30%;
+}
+#secondhalf-image{
+	width: 200px;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 150px;
+	padding: 2px;
+	display: block;
+	margin:auto;
+}
+
+.text-big{
+	font-size: 41px;
+}
+.text-small{
+	font-size: 16px;
+}
+
+.btn{
+	padding: 10px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 9px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+	padding: 6px 10px;
+	vertical-align: middle;
+}
+
+.burger{
+	display:none;
+	position: absolute;
+	cursor: pointer;
+	flex-direction: column;
+	top:15px;
+	right: 4%;
+}
+.line{
+	width:30px;
+	height: 4px;
+	margin: 4px 3px;
+	background-color: white;
+}
+
+@media only screen and (max-width:1155px){
+	.nav-list{
+		flex-direction: column;
+	}
+	.navbar{
+		flex-direction: column;
+		height: 470px;
+		transition: all 0.7s ease-out;		
+	}
+	.rightnav{
+		text-align: center;
+	}
+	.firsthalf{
+		margin-top: 5%
+	}
+	.box-main{
+		flex-direction: column-reverse;
+		max-width: 100%;
+		padding: 5%;
+	}
+	#secondhalf-image{
+		height: 100px;
+		width: 100px;
+		margin-top: 50px;
+	}
+	#search{
+		width:100%;
+	}
+	.burger{
+		display: block;
+		margin-top: 15px;
+	}
+	.h-nav-resp{
+		height:70px;
+	}
+	.v-class-resp{
+		opacity: 0;
+	}
+	.text-big{
+		text-align: center;
+	}
+	
+	.text-small{
+		text-align: center;
+	}
+	
+	.buttons{
+		text-align: center;
+	}
+}
+

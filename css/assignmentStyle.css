@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.background{
+    background: rgba(0,0, 0, 0.7) url(../img/assignmentbg.jpg);
+    height: 100vh;
+    mix-blend-mode: darken;
+    background-size: cover;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    padding: 5px 20px;
+}
+.text-big{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-medium{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 0 20px;
+}
+.text-small{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 0 15px;
+}
+.color-text{
+    color: red;
+}
+.btn{
+    padding: 10px 40px;
+    background-color: dodgerblue;
+    color: white;
+    border: 2px solid dodgerblue;
+    border-radius: 20px;
+    text-align: start;
+}
+.flexbox{
+    display:flex;
+    flex-direction: row;
+    margin-top: -120px;
+}
+.flexbox1{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 30%;
+}
+.flexbox2{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 20%;
+    padding: 5px;
+    align-items: flex-start;
+    margin-bottom: 25%;
+}
+.flexbox3{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 20%;
+    padding: 5px;
+    align-items: flex-start;
+    margin-bottom: 35%;
+    margin-top: -100px;
+}
+.flexbox4{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
